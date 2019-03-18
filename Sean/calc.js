@@ -15,7 +15,7 @@ function divide(a,b) {
   return Number(a)/Number(b);
 }
 function pow(a,b) {
-  return Math.pow(a,b);
+  return Math.pow(Number(a),Number(b));
 }
 //Checks if its a numeral or operator with two functions.
 function isNumeral(char) {
