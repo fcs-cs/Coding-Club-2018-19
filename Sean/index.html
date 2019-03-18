@@ -5,10 +5,41 @@
     <title>Sean's Calculator</title>
   </head>
   <style>
+  body {
+    background-image: url('background.jpg');
+  }
+  #calcInput {
+    border-style: none;
+    border-bottom: 1px solid black;
+    width: 50%;
+    padding: 12px 2px;
+    margin: 8px 0;
+    background-color: transparent !important;
+    font-family: sans-serif;
+    text-align: center;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle;
+  }
+  #equals {
+    background-color: transparent !important;
+    border: inset;
+    color: white;
+    padding: 32px 32px;
+    text-decoration: none;
+    margin: 2px 2px;
+    cursor: pointer;
+  }
+  #answer {
+    font-size: 45px;
+    font-family: monospace;
+  }
 
   </style>
   <body>
-    <input id='calcInput'>
+    <input id='calcInput' size="20" placeholder="Put Calculation Here">
+    <br>
     <button id='equals' onclick='calculate()'>=</button>
     <p id='answer'></p>
   </body>
