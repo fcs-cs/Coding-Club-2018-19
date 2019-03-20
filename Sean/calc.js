@@ -77,7 +77,7 @@ function calculate() {
     } else if (ops[i] == '*') {
       val = mult(val, nums[i+1]);
     } else if (ops[i] == '/') {
-      val = mult(val, nums[i+1]);
+      val = divide(val, nums[i+1]);
     } else if (ops[i] == '^') {
       val = pow(val, nums[i+1]);
     }
